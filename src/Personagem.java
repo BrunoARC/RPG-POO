@@ -68,8 +68,8 @@ public abstract class Personagem {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-    public void mover(){
-        System.out.println("O personagem se move na direção do alvo!");
+    public void mover(Personagem personagem){
+        System.out.println(this.nome+" se move na direção do personagem "+personagem.getNome());
     }
     public void mostrarStatus(){
         System.out.println("O nivel do personagem é: " + this.nivel);
