@@ -22,8 +22,8 @@ public class Guerreiro extends Arquetipos implements CorpoACorpo {
         this.resistenciaFisica = resistenciaFisica;
     }
 
-    public void golpePesado() {
-        System.out.println(getNome() + " desfere um golpe pesado com toda a sua força!");
+    public void golpePesado(Personagem personagem) {
+        System.out.println(getNome() + " desfere um golpe pesado no "+personagem.getNome()+" com toda a sua força!");
     }
 
     @Override
