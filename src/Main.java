@@ -1,3 +1,35 @@
 void main(){
-
+  Arqueiro arqueiro1 = new Arqueiro("Joel",10);
+    Guerreiro guerreiro1 = new Guerreiro("Cahara",12);
+    Assassino assasino1 = new Assassino("Edward",15);
+    Mago mago1 = new Mago("O'saa",20);
+    Guilda guilda1 = new Guilda("Magos Amarelos",5);
+    PersonagemNaoJogavel personagem1 = new PersonagemNaoJogavel("Aldeao",15);
+    Item item1 = new Item("Claymore",5.5,46.5);
+    Inventario inventario1 = new Inventario(12);
+    inventario1.adicionarItem(item1);
+    item1.usar();
+    personagem1.setDialogo("Ola!");
+    personagem1.interagir();
+    guilda1.adicionarMembro(mago1);
+    guilda1.adicionarMembro(assasino1);
+    guilda1.removerMembro(assasino1);
+    guerreiro1.setVida(43);
+    guerreiro1.setArmadura(10);
+    guerreiro1.setAgilidade(12);
+    guerreiro1.setForca(20);
+    guerreiro1.setResistenciaFisica(17);
+    guerreiro1.setArmaPrincipal("Zweihänder");
+    mago1.setVida(60);
+    mago1.setMana(60);
+    mago1.setElementoMagico("Magia de sangue");
+    mago1.setPoderMagico(33);
+    mago1.lancarMagia();
+    mago1.usarHabilidadeEspecial();
+    guerreiro1.mover(assasino1);
+    guerreiro1.atacar(assasino1);
+    assasino1.defender(2);
+    guerreiro1.golpePesado(mago1);
+    guerreiro1.mostrarStatus();
+    mago1.mostrarStatus();
 }
