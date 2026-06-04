@@ -1,10 +1,10 @@
 void main(){
-  Arqueiro arqueiro1 = new Arqueiro("Joel",10);
-    Guerreiro guerreiro1 = new Guerreiro("Cahara",12);
-    Assassino assasino1 = new Assassino("Edward",15);
-    Mago mago1 = new Mago("O'saa",20);
+  Arqueiro arqueiro1 = new Arqueiro("Matheus",10);
+    Guerreiro guerreiro1 = new Guerreiro("Bruno",12);
+    Assassino assasino1 = new Assassino("Luis",15);
+    Mago mago1 = new Mago("Rafael",20);
     Guilda guilda1 = new Guilda("Magos Amarelos",5);
-    PersonagemNaoJogavel personagem1 = new PersonagemNaoJogavel("Aldeao",15);
+    PersonagemNaoJogavel personagem1 = new PersonagemNaoJogavel("Joao",15);
     Item item1 = new Item("Claymore",5.5,46.5);
     Inventario inventario1 = new Inventario(12);
     inventario1.adicionarItem(item1);
